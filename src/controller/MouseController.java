@@ -10,12 +10,10 @@ import view.MyDisplay;
 
 public class MouseController implements MouseMotionListener{
 	
-	private Circle c;
 	private MyDisplay d;
 	
-	public MouseController(Circle c, MyDisplay d) {
+	public MouseController(MyDisplay d) {
 		// TODO Auto-generated constructor stub
-		this.c = c;
 		this.d = d;
 	}
 

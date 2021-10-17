@@ -21,7 +21,7 @@ public class User {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		MyDisplay d = new MyDisplay(c);
-		MouseController m = new MouseController(c, d);
+		MouseController m = new MouseController(d);
 		frame.add(d);
 		frame.addMouseMotionListener(m);
 		
