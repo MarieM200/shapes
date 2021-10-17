@@ -1,0 +1,21 @@
+Exercice 1
+
+1.	Graphic -> permet de créer des formes
+	Graphic2D -> est une sous classe de la classe Graphic
+		  -> permet de faire comme Graphic mais de manière plus élaborée et précise
+	JFrame -> permet de faire des fenêtres
+	JPanel -> permet aussi de faire des fenêtre
+
+2.	JFrame frame = new JFrame("Java Avanc´e - Graphic Display"); -> initialise un Frame et indique le titre qui sera en haut de la fenetre
+	frame.setSize(new Dimension(500,500)); -> indique les dimensions de la fenetre
+	frame.setVisible(true); -> indique qu'il faut que la fenetre soit visible
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); -> indique que la fenetre se ferme lorsque l'on clique sur la croix et que l'application s'arrete de tourner
+
+	MyDisplay d = new MyDisplay(); -> créer un display
+	frame.add(d); -> ajoute le frame créer précédemment à ce display
+
+3.	La fonction est aussi appellée à frame.add(d);
+ 
+4.	La différence principale entre le package awt et le package swing est que awt est basé sur l'interface utilisateur originale
+	alors que Swing hérite de awt et est basé sur le GUI 
+	
