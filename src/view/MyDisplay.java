@@ -6,13 +6,13 @@ import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import model.Circle;
-import model.Shapes;
+import model.Shape;
 
 public class MyDisplay extends JPanel{
 	
-	private Shapes s;
+	private Shape s;
 	
-	public MyDisplay(Shapes s) {
+	public MyDisplay(Shape s) {
 		// TODO Auto-generated constructor stub
 		this.s = s;
 	}

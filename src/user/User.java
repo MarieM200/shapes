@@ -7,14 +7,14 @@ import javax.swing.JFrame;
 import controller.MouseController;
 import model.Circle;
 import model.Point;
-import model.Shapes;
+import model.Shape;
 import view.MyDisplay;
 
 public class User {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Shapes c = new Circle(new Point(150, 150), 100);
+		Shape c = new Circle(new Point(150, 150), 100);
 		
 		JFrame frame = new JFrame("Java Avancee - Graphic Display");
 		frame.setSize(new Dimension(500,500));

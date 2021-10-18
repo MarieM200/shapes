@@ -3,7 +3,7 @@ package model;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
-public class Circle extends Shapes{
+public class Circle implements Shape{
 	private Point center;
 	private int radius;
 	
