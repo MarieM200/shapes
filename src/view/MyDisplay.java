@@ -6,29 +6,27 @@ import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import model.Circle;
+import model.Shapes;
 
 public class MyDisplay extends JPanel{
 	
-	private Circle c;
+	private Shapes s;
 	
-	public MyDisplay(Circle c) {
+	public MyDisplay(Shapes s) {
 		// TODO Auto-generated constructor stub
-		this.c = c;
+		this.s = s;
 	}
 	
 	@Override
 	 public void paint(Graphics g) {
-	     //Graphics2D g2d = (Graphics2D) g;
-	     //g2d.drawOval(c.getCenter().getX(), c.getCenter().getY(), c.getRadius(), 100);
-	     // remarque : le draw doit etre dans circle car si on veut ajouter d'autres formes, cela ne fonctionnera pas
-		c.draw(g);
+		s.draw(g);
 	 }
 	
 	public void update_circle(int x, int y) {
 		Graphics g;
 		g = this.getGraphics();
 		g.clearRect(0, 0, getWidth(), getHeight());
-		c.update(g, x, y);
+		s.update(g, x, y);
 		
 	}
 	

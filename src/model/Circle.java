@@ -3,7 +3,7 @@ package model;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
-public class Circle {
+public class Circle extends Shapes{
 	private Point center;
 	private int radius;
 	
@@ -17,11 +17,13 @@ public class Circle {
 		return Math.pow(radius, 2) * Math.PI;
 	}
 	
+	@Override
 	public void draw(Graphics g){
 		Graphics2D g2d = (Graphics2D) g;
 	     g2d.drawOval(this.getCenter().getX(), this.getCenter().getY(), this.radius, 100);
 	}
 	
+	@Override
 	public void update(Graphics g, int x, int y){
 		g.drawOval(x, y,  this.radius, 100);
 	}
