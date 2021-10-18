@@ -20,7 +20,7 @@ public class MouseController implements MouseMotionListener{
 	@Override
 	public void mouseMoved(java.awt.event.MouseEvent e) {
 		// TODO Auto-generated method stub
-		this.d.update_circle(e.getX(), e.getY());
+		this.d.update_graph(e.getX(), e.getY());
 	}
 	
 	@Override

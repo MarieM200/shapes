@@ -5,7 +5,6 @@ package view;
 import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import model.Circle;
 import model.Shape;
 
 public class MyDisplay extends JPanel{
@@ -22,7 +21,7 @@ public class MyDisplay extends JPanel{
 		s.draw(g);
 	 }
 	
-	public void update_circle(int x, int y) {
+	public void update_graph(int x, int y) {
 		Graphics g;
 		g = this.getGraphics();
 		g.clearRect(0, 0, getWidth(), getHeight());
