@@ -1,5 +1,8 @@
 package model;
 
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
 public class Circle {
 	private Point center;
 	private int radius;
@@ -12,6 +15,15 @@ public class Circle {
 	
 	public double area() {
 		return Math.pow(radius, 2) * Math.PI;
+	}
+	
+	public void draw(Graphics g){
+		Graphics2D g2d = (Graphics2D) g;
+	     g2d.drawOval(this.getCenter().getX(), this.getCenter().getY(), this.radius, 100);
+	}
+	
+	public void update(Graphics g, int x, int y){
+		g.drawOval(x, y,  this.radius, 100);
 	}
 	
 	@Override

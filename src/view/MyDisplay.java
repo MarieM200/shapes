@@ -18,15 +18,17 @@ public class MyDisplay extends JPanel{
 	
 	@Override
 	 public void paint(Graphics g) {
-	     Graphics2D g2d = (Graphics2D) g;
-	     g2d.drawOval(c.getCenter().getX(), c.getCenter().getY(), c.getRadius(), 100);
+	     //Graphics2D g2d = (Graphics2D) g;
+	     //g2d.drawOval(c.getCenter().getX(), c.getCenter().getY(), c.getRadius(), 100);
+	     // remarque : le draw doit etre dans circle car si on veut ajouter d'autres formes, cela ne fonctionnera pas
+		c.draw(g);
 	 }
 	
 	public void update_circle(int x, int y) {
 		Graphics g;
 		g = this.getGraphics();
 		g.clearRect(0, 0, getWidth(), getHeight());
-		g.drawOval(x, y,  c.getRadius(), 100);
+		c.update(g, x, y);
 		
 	}
 	
